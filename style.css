@@ -443,9 +443,10 @@ nav ul li a.active {
 
   .marquee-track img,
   .marquee-track-reverse img {
-    width: 200px;
-    height: auto;
-    margin: 0 10px;
+    width: 100px;
+    height: 70;
+    margin: 0 8px;
+    object-fit: cover;
   }
 
   .image-marquee {
