@@ -499,3 +499,16 @@ nav ul li a.active {
   margin-top: auto;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
+
+.view-link {
+  color: #007bff !important;           /* Blue color */
+  font-weight: bold;        /* Make it bold */
+  text-decoration: none;    /* Remove underline (optional) */
+  margin-top: 10px;         /* ⬅️ this adds space above the link */
+  display: inline-block;
+}
+
+.view-link:hover {
+  text-decoration: underline;  /* Optional: underline on hover */
+}
+
