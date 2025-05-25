@@ -380,3 +380,110 @@ nav ul li a.active {
 .gallery-img:hover {
   transform: scale(1.05);
 }
+
+/* ===============================
+   RESPONSIVE DESIGN FOR MOBILE
+=================================*/
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    box-shadow: none;
+    overflow: visible;
+  }
+
+  .sidebar .logo {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .title-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .team-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .team-member,
+  .lead-researcher {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .image-marquee,
+  .marquee-track img,
+  .marquee-track-reverse img {
+    height: auto;
+    width: 100%;
+  }
+
+  .faq-left-wrapper {
+    margin: 0;
+    padding: 0 10px;
+    max-width: 100%;
+  }
+
+  #faqs .content {
+    justify-content: center;
+    padding: 20px 10px;
+  }
+
+  .faq-item {
+    width: 100%;
+  }
+
+  .gallery-img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .topbar h2 {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}
+
+/*=========FOOTER+===========*/
+.footer {
+  background-color: #011627;
+  color: #7AE1DD;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: auto;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
