@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Electro-Oxi Gauge</title>
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js"></script>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo fade-in">
+        <img src="images/logo.png" alt="Logo" />
+        <h1>Electro-Oxi<br><span>Gauge</span></h1>
+      </div>
+      <nav class="fade-in">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+
+
+      <!-- Home Section -->
+      <section id="home" class="section fade-in">
+        <header class="topbar">
+          <h2>Electro-Oxi Gauge<br><span class="subtitle">Development of an IoT-based Portable Tool for Monitoring Heart Health</span></h2>
+        </header>
+        <div class="content">
+          <h3>Project Overview</h3>
+          <div class="title-image-container">
+            <img src="images/title_image.jpg" alt="Project Banner" class="title-image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- History Section -->
+      <section id="history" class="section fade-in">
+        <header class="topbar">
+          <h2>History</h2>
+        </header>
+        <div class="content">
+          <h3>Development Phase</h3>
+          <div class="image-marquee">
+            <h4 class="marquee-title">In Progress Development</h4>
+            <div class="marquee-track">
+              <img src="images/img1.png" alt="Stage 1" />
+              <img src="images/img2.png" alt="Stage 2" />
+              <img src="images/img3.png" alt="S  tage 3" />
+              <img src="images/img4.png" alt="Stage 4" />
+              <img src="images/img5.png" alt="Stage 5" />
+              <img src="images/img6.jpg" alt="Stage 6" />
+              <img src="images/img7.jpg" alt="Stage 7" />
+              <img src="images/img8.jpg" alt="Stage 8" />
+              <img src="images/img9.jpg" alt="Stage 9" />
+              <img src="images/img10.jpg" alt="Stage 10" />
+            </div>
+          </div>
+          <div class="image-marquee reverse">
+            <h4 class="marquee-title">Final Progress</h4>
+            <div class="marquee-track-reverse">
+              <img src="images/img20.png" alt="Stage 1" />
+              <img src="images/img21.jpg" alt="Stage 2" />
+              <img src="images/img22.jpg" alt="Stage 3" />
+              <img src="images/img23.jpg" alt="Stage 4" />
+              <img src="images/img24.jpg" alt="Stage 5" />
+              <img src="images/img25.jpg" alt="Stage 6" />
+              <img src="images/img26.jpg" alt="Stage 7" />              
+              <img src="images/img32.jpg" alt="Stage 8" />
+              <img src="images/img33.jpg" alt="Stage 9" />
+              <img src="images/img34.jpg" alt="Stage 10" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section id="team" class="section fade-in">
+        <header class="topbar">
+          <h2>Our Team</h2>
+        </header>
+        <div class="content team-section">
+          <div class="lead-researcher">
+            <a href="researchlead.html" target="_blank">
+              <img src="images/galvero.png" alt="Lead Researcher" />
+              <p>Galvero, JM<br><span>Lead Researcher</span></p>
+            </a>
+          </div>
+
+          <h3>Meet Our Team</h3>
+          <div class="team-row centered-layout">
+            <div class="team-member">
+              <a href="hardsoftware.html" target="_blank">
+                <img src="images/divinagracia.jpg" alt="Hardware & System Creator" />
+                <p>Divinagracia, Christopher Sean L.<br><span>Hardware & System Creator</span></p>
+              </a>
+            </div>
+
+            <div class="team-member">
+              <a href="assistantresearcher.html" target="_blank">                
+                <img src="images/tuazon.png" alt="Research Assistant" />
+                <p>Tuazon, Anthony Jr.<br><span>Research Assistant</span></p>
+              </a>
+            </div>
+
+            <div class="team-member">
+              <a href="pabuhat.html" target="_blank">                
+                <img src="images/mango.jpg" alt="Research Pabuhat" />
+                <p>Bello, Kian Joshua<br><span>Research Pabuhat</span></p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQs Section -->
+      <section id="faqs" class="section fade-in">
+        <header class="topbar">
+          <h2>Frequently Asked Questions</h2>
+        </header>
+        <div class="faq-left-wrapper">
+          <div class="faq-item">
+            <h4>What is Electro-Oxi Gauge?</h4>
+            <p>It’s an IoT-based portable device designed to monitor heart health in real-time.</p>
+          </div>
+      
+          <div class="faq-item">
+            <h4>How does Electro-Oxi Gauge work?</h4>
+            <p>It uses biosensors to measure heart-related data and transmits it to an online dashboard.</p>
+          </div>
+      
+          <div class="faq-item">
+            <h4>What health parameters does the device track?</h4>
+            <p>It tracks oxygen saturation (SpO2), heart rate, and ECG signals.</p>
+          </div>
+      
+          <div class="faq-item">
+            <h4>Is Electro-Oxi Gauge wearable?</h4>
+            <p>Yes, it is compact and designed to be comfortably worn or carried.</p>
+          </div>
+      
+          <div class="faq-item">
+            <h4>Can it be used by people without medical training?</h4>
+            <p>Absolutely. It’s built with a user-friendly interface for ease of use.</p>
+          </div>
+      
+          <!-- Technical / Functionality -->
+          <div class="faq-item">
+            <h4>Does it require internet to function?</h4>
+            <p>Yes, for real-time data upload and monitoring via the web dashboard.</p>
+          </div>
+      
+          <div class="faq-item">
+            <h4>What kind of sensors are used in the device?</h4>
+            <p>The device uses pulse oximeters, ECG modules, and microcontrollers like ESP32.</p>
+          </div>
+      
+          <div class="faq-item">
+            <h4>Where is the data stored?</h4>
+            <p>Data is stored in a cloud database that can be accessed via a web interface.</p>
+          </div>
+      
+          <div class="faq-item">
+            <h4>Can I export or download the collected data?</h4>
+            <p>Yes, the system can be configured to allow data exports in formats like CSV.</p>
+          </div>
+      
+          <div class="faq-item">
+            <h4>How is power supplied to the device?</h4>
+            <p>It operates via rechargeable battery or USB power connection.</p>
+          </div>
+      
+          <!-- Research and Background -->
+          <div class="faq-item">
+            <h4>Who developed the Electro-Oxi Gauge?</h4>
+            <p>It was developed by Computer Engineering students from the University of San Agustin.</p>
+          </div>
+      
+          <div class="faq-item">
+            <h4>Is this a commercial medical device?</h4>
+            <p>No, it’s currently a research prototype intended for academic and experimental purposes.</p>
+          </div>
+      
+          <div class="faq-item">
+            <h4>Can this project be expanded?</h4>
+            <p>Yes, future versions may include features like Bluetooth connectivity and mobile app integration.</p>
+          </div>
+        </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

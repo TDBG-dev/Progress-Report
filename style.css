@@ -1,0 +1,382 @@
+/* ===============================
+   RESET & GLOBAL STYLES
+=================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.section h3 {
+  text-align: center;
+}
+
+/* ===============================
+   SIDEBAR
+=================================*/
+.sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #011627 0%, #033649 100%);
+  color: #7AE1DD;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.logo h1 {
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.logo span {
+  font-weight: normal;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 40px;
+}
+
+nav ul li {
+  margin: 20px 0;
+}
+
+nav ul li a {
+  color: #7AE1DD;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ffffff;
+  transform: scale(1.1);
+  letter-spacing: 1.2px;
+}
+
+/* ===============================
+   MAIN CONTENT
+=================================*/
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* ===============================
+   TOPBAR
+=================================*/
+.topbar {
+  background-color: #6DD4D4;
+  padding: 20px;
+  text-align: center;
+}
+
+.topbar h2 {
+  color: #111;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: normal;
+  display: inline-block;
+}
+
+/* ===============================
+   PROJECT IMAGE
+=================================*/
+.title-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.title-image {
+  max-width: 100%;
+  width: 900px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===============================
+   TEAM
+=================================*/
+.team-section {
+  text-align: center;
+}
+
+.lead-researcher {
+  text-align: center;
+  margin: 30px auto;
+  width: 200px;
+}
+
+.lead-researcher a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.lead-researcher p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.lead-researcher img,
+.team-member img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member {
+  text-align: center;
+  margin: 20px;
+  width: 200px;
+}
+
+.team-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin-top: 50px;
+}
+
+.team-member:hover img,
+.lead-researcher:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-member p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.team-member a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+
+/* ===============================
+   MARQUEE
+=================================*/
+.marquee-section {
+  margin-bottom: 40px;
+}
+
+.marquee-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #033649;
+  margin-bottom: 10px;
+}
+
+
+.image-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+  margin: 30px 0;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.image-marquee::before,
+.image-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.image-marquee::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.image-marquee::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.marquee-track,
+.marquee-track-reverse {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.marquee-track {
+  animation: marqueeScroll 20s linear infinite;
+}
+
+.marquee-track-reverse {
+  animation: marqueeScrollReverse 25s linear infinite;
+}
+
+.image-marquee:hover .marquee-track,
+.image-marquee.reverse:hover .marquee-track-reverse {
+  animation-play-state: paused;
+}
+
+.marquee-track img,
+.marquee-track-reverse img {
+  width: 300px;
+  height: 200px;
+  margin: 0 15px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marqueeScrollReverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* ===============================
+   ANIMATIONS
+=================================*/
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sidebar .fade-in {
+  transform: translateX(-30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.sidebar .visible {
+  transform: translateX(0);
+}
+
+/* FAQ SECTION RIGHT ALIGNMENT */
+#faqs .content {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+}
+
+.faq-left-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 700px;
+  margin-left: 40px;
+}
+
+.faq-item {
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.faq-item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #011627;
+}
+
+.faq-item:hover {
+  transform: translateY(-4px);
+}
+
+.faq-item p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.gallery-img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
