@@ -441,12 +441,23 @@ nav ul li a.active {
     max-width: 300px;
   }
 
-  .image-marquee,
   .marquee-track img,
   .marquee-track-reverse img {
+    width: 200px;
     height: auto;
-    width: 100%;
+    margin: 0 10px;
   }
+
+  .image-marquee {
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .marquee-track,
+  .marquee-track-reverse {
+    padding: 10px 0;
+  }
+
 
   .faq-left-wrapper {
     margin: 0;
